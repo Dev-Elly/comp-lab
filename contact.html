@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact information</title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+        }
+
+        body{
+            background-color: #ff9d0039;
+        }
+
+        nav{
+            background-color: rgba(218, 165, 32, 0.3);
+            backdrop-filter: blur(30px);
+        }
+
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+
+        ul a{
+            text-decoration: none;
+            margin-top: 13px;
+            padding: 5px;
+            border-radius: 8px;
+            color: black;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        a:hover{
+            background-color: #f0f0f0;
+        }
+
+        ul li{
+            height: 70px;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .one{
+            padding: 30px 15px 15px 15px;
+            background-color: rgba(165, 42, 42, 0.3);
+            width: 85%;
+            position: relative;
+            left: 30px;
+            border-radius: 10px;
+        }
+
+        .one #form input{
+            width: 90%;
+            height: 50px;
+            border-radius: 10px;
+            margin: 15px 0px 15px;
+            padding-left: 10px;
+        }
+
+        .one #form #message{
+            height: 150px;
+            width: 90%;
+            border-radius: 10px;
+            padding: 5px 0px 0px 10px;
+        }
+
+        .one #form #message::placeholder{
+            padding-left: 10px;
+        }
+
+        .one #form input::placeholder{
+            padding: 10px;        
+        }
+
+        h2{
+            font-size: 24px;
+            padding-bottom: 20px;
+        }
+
+        .one #form #submitBtn{
+            width: 250px;
+            padding: 10px 0px 10px 0px;
+            background-color: #b5784bd8;
+            margin: 5px 0px 0px 5px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        .two{
+            padding: 30px 15px 15px 15px;
+            background-color: rgba(165, 42, 42, 0.3);
+            width: 85%;
+            position: relative;
+            left: 30px;
+            margin-top: 80px;
+            border-radius: 10px;    
+            text-align: center;
+        }
+
+        footer{
+            font-weight: bold;
+            text-align: center;
+            font-size: 20px;
+            padding: 40px 0px 40px 0px;
+        }
+
+        h3{
+            font-size:20px;
+            padding-bottom: 7px;
+        }
+
+        h1{
+            font-size: 26px;
+            padding: 15px 0px 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="navbar">
+           <nav>
+               <ul>
+                   <li><a href="home.html">Home</a></li>
+                   <li><a href="session.html">Book a 
+                   Session</a></li>
+                   <li><a href="location.html">Location</a>
+                   </li>                
+                   <li><a href="contact.html">Contact us
+                   </a></li>
+               </ul>
+           </nav>
+       </div>
+       <h1>Connect with us!</h1>
+       <div class="one">
+           <h2>Send us a message</h2>
+           <form id="form">
+               <label for="name">Name:</label><br>
+               <input type="text" id="name" 
+               placeholder="e.g; John Doe" required><br>
+               <label for="email">Email:</label><br>
+               <input type="email" id="email" 
+               placeholder="e.g; johndoe@gmail.com" 
+               required><br>
+               <label for="message">Message:</label><br>
+               <textarea id="message" placeholder="Write your preferred message" required></textarea>
+               <button id="submitBtn">Submit</button>
+           </form>
+       </div>
+       
+       <div class="two">
+           <h3>Send Us An Email</h3>
+           <label for="email">Email:</label>
+           <a href="#" id="email">lab@simba.ac.ke</a><br>
+       </div>
+       <div class="endmsg">
+           <footer>Thank you for sending us a message!</footer>
+       </div>
+       
+</body>
+</html>

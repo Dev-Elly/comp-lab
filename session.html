@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book a session</title>
+    <link rel="stylesheet" href="styles/session.css">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+        }
+
+        body{
+            background-color: #ff9d0039;
+            height: 100vh;
+        }
+
+        nav{
+            background-color: rgba(218, 165, 32, 0.3);
+            backdrop-filter: blur(30px);
+        }
+
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+
+        ul a{
+            text-decoration: none;
+            margin-top: 13px;
+            padding: 5px;
+            border-radius: 8px;
+            color: black;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        a:hover{
+            background-color: #f0f0f0;
+        }
+
+        ul li{
+            height: 70px;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .one{
+            padding: 30px 15px 15px 15px;
+            background-color: rgba(165, 42, 42, 0.3);
+            width: 85%;
+            position: relative;
+            left: 30px;
+            top: 30px;
+            border-radius: 10px;
+        }
+
+        .one #form input, #choose{
+            width: 90%;
+            height: 50px;
+            border-radius: 10px;
+            margin: 15px 0px 15px;
+            padding-left: 10px;
+            font-size: 15px;
+        }
+
+        .one #form input::placeholder{
+            padding: 10px;
+        }
+
+        h2{
+            font-size: 20px;
+        }
+
+        .one #form #submitBtn{
+            width: 250px;
+            padding: 10px 0px 10px 0px;
+            background-color: #b5784bd8;
+            margin: 5px 0px 0px 5px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #footerContent{
+            font-weight: bold;
+            font-size: 26px;
+            text-align: center;
+            margin-top: 30px;     
+        }
+
+        #footerContent footer{
+            padding: 0px 0px 30px 0px;
+            font-size: 20px;
+        }
+
+        .main{
+            margin-top: 80px;
+        }
+
+        .main .two{
+            background-color: rgba(165, 42, 42, 0.3);
+            width: 85%;
+            border-radius: 10px;
+            margin: 20px 0px 0px 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .main .two h3{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+        }
+
+        #frontendIcon, #fullstack, #devops, #cybersec{
+            width: 50px;
+            padding: 5px 0px 0px 10px;
+        }
+
+        #backendIcon{
+            width: 70px;
+            padding-top: 5px;
+        }
+
+        #designIcon{
+            width: 75px;
+        }
+
+        h1{
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        @media(max-width: 960px) {
+            h3{
+                font-size: 13.9px;    
+            }
+        }
+
+        code{
+            color: rgb(220, 47, 47);
+            font-weight: bold;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="navbar">
+           <nav>
+               <ul>
+                   <li><a href="home.html">Home</a></li>
+                   <li><a href="session.html">Book a 
+                   Session</a></li>
+                   <li><a href="location.html">Location</a>
+                   </li>
+                   <li><a href="contact.html">Contact us
+                   </a></li>
+               </ul>
+           </nav>
+           <h1>Join us!</h1>
+           <div class="one">
+               <h2>Fill in the fields below and book your 
+               preferred session</h2><br>
+               <form id="form">
+                   <label for="name">Full Name:</label><br>
+                   <input type="text" id="name" 
+                   placeholder="e.g; John Doe" 
+                   autocomplete="on" required><br>
+                   
+                   <label for="email">Email:</label><br>
+                   <input type="email" id="email" 
+                   placeholder="e.g; johndoe@gmail.com" 
+                   autocomplete="on" required><br>
+                   
+                   <label for="number">Enter phone number:
+                   </label><br>
+                   <input type="number" id="number" 
+                   placeholder="e g; 0712345678" 
+                   autocomplete="on" required><br>
+                   
+                   <label for="session">Session:</label><br>
+                   <select id="choose">
+                       <option value="Select option">
+                       Select option</option>
+                       <option value="Frontend">
+                           Frontend Development Session
+                       </option>
+                       <option value="Backend">
+                           Backend Development Session
+                       </option>
+                       <option value="Fullstack">
+                           Fullstack Development Session
+                           </option>
+                       <option value="DevOps">
+                           DevOps Power-up Session</option>
+                       <option value="Cyber security">
+                       Cyber Security Session</option>
+                       <option value=
+                       "Graphics design">
+                       Graphics Design Session
+                       </option>
+                   </select>
+                   <button id="submitBtn">Submit</button>
+               </form>
+           </div>
+       </div>
+       <div class="main">
+           <div class="two">
+               <img src="images/frontend.png" alt="frontend icon" 
+               id="frontendIcon">
+               <h3>Frontend Development Session</h3><br>
+               <code>Session Closed</code>
+           </div>
+           <div class="two">
+               <img src="images/backend.png" alt="backend icon" 
+               id="backendIcon">
+               <h3>Backend Development Session</h3><br>
+               <code>Session Closed</code>
+           </div>
+           <div class="two">
+               <img src="images/fullstack.png" alt="fullstack icon" 
+               id="fullstack">
+               <h3>Fullstack Development Session</h3><br>
+               <code>Session Closed</code>
+           </div>
+           <div class="two">
+               <img src="images/devops.png" alt="DevOps icon" 
+               id="devops">
+               <h3>DevOps Power-up Session</h3><br>
+               <code>Session Closed</code>
+           </div>
+           <div class="two">
+               <img src="images/cyber.png" 
+               alt="cyber security icon" 
+               id="cybersec">
+               <h3>Cyber Security Session</h3><br>
+               <code>Session Closed</code>
+           </div>
+           <div class="two">
+               <img src="images/graphics.png" 
+               alt="Graphics design icon" 
+               id="designIcon">
+               <h3>Graphics Design Session</h3>
+               <br>
+               <code>Session Closed</code>
+           </div>
+       </div>
+       <div id="footerContent">
+          <footer>Thank you for booking a session with us today!</footer> 
+       </div>     
+</body>
+</html>

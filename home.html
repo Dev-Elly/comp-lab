@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+        }
+
+        body{
+            background-image: url('../images/laptop.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+
+        nav{
+            background-color: rgba(218, 165, 32, 0.3);
+            backdrop-filter: blur(30px);
+        }
+
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+
+        ul a{
+            text-decoration: none;
+            margin-top: 13px;
+            padding: 5px;
+            border-radius: 8px;
+            color: black;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        a:hover{
+            background-color: #f0f0f0;
+        }
+
+        ul li{
+            height: 70px;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .container{
+            justify-content: center;
+            align-items: center;    
+            height: 100vh;   
+        }
+
+        .main{
+            display: flex;
+            justify-content: center;    
+        }
+
+        .main .content {
+            max-width: 400px;
+            background-color: rgba(218, 165, 32, 0.1);
+            backdrop-filter: blur(30px);  
+            font-weight: bold;
+            border: 2px solid black;
+            border-radius: 12px;
+            text-align: center;
+            color: white;
+            padding: 0px 12px 12px 12px;
+            margin-top: 30px;
+            font-family: sans-serif;
+        }
+
+        h1{
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="navbar">
+           <nav>
+               <ul>
+                   <li><a href="home.html">Home</a></li>
+                   <li><a href="session.html">Book a 
+                   Session</a></li>
+                   <li><a href="location.html">Location</a>
+                   </li>
+                   <li><a href="contact.html">Contact us
+                   </a></li>
+               </ul>
+           </nav>
+       </div>
+       <div class="main">
+         <div class="content">
+           <h1>Simba Comp Lab</h1>
+           Simba Comp Lab is a tech-focused learning space 
+           that empowers individuals with practical skills in 
+           frontend development, backend development, DevOps,   
+           cybersecurity and graphics design. Whether you're 
+           a beginner or looking to advance your skills, our 
+           lab offers a hands-on, project-based approach to 
+           help you grow into a confident and job-ready tech 
+           professional.
+         </div>
+       </div>               
+</body>
+</html>
